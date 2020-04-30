@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a employee directory created with React. The application's UI is broken up into components, manages component state, and responds to user events.
+For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
 
 ## User Story
 
@@ -22,8 +22,11 @@ The user should be able to:
 
   * Filter the users by at least one property.
 
-## Links
+## Submission on BCS
 
-The deployed application: 
+You are required to submit the following:
 
-This application's Github repository: [https://github.com/SamSherrill/19th-homework](https://github.com/SamSherrill/19th-homework)
+* the URL to the deployed application
+
+* the URL to the Github repository
+
