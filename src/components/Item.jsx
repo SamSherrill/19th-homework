@@ -25,9 +25,13 @@ const Item = (props) => {
       });
   }, []);
 
-//   makeFakePhoneNumber(() => {
-//     fakePhoneNumber = Math.floor(Math.random())
-//   });
+  function makeFakePhoneNumber() {
+    var fragment1 = Math.floor(Math.random()*900 + 100);
+    var fragment2 = Math.floor(Math.random()*1000);
+    var fragment3 = Math.floor(Math.random()*10000);
+    var fakePhoneNumber = `(${fragment1}) ${fragment2}-${fragment3}`;
+    return fakePhoneNumber;
+  };
 
   return (
     <div className="row">
@@ -40,7 +44,7 @@ const Item = (props) => {
       </div>
       <div className="col-sm-1">{props.id}</div>
       <div className="col-md-3">{props.employee_name}</div>
-      <div className="col-md-3">{props.employee_salary}</div>
+      <div className="col-md-3">{makeFakePhoneNumber()}</div>
       <div className="col-sm-1">{props.employee_age}</div>
     </div>
   );
