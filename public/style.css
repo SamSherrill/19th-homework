@@ -12,5 +12,25 @@
 }
 
 form {
-    padding: 5%;
+    padding: 3%;
+}
+
+.h3-employee-count {
+    margin: auto;
+    padding: 1%;
+}
+
+.list-headers {
+    margin: 3% 0;
+    padding: 2% 0;
+    font-weight: bold;
+    background-color: lightgrey;
+}
+
+.item-row {
+    margin: 1% 0;
+}
+
+.profile-pic {
+    /* may not need this */
 }
