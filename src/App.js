@@ -1,15 +1,16 @@
 import React from 'react';
-import { Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
 
-function App() {
-  return (
     // Will need:
     // Router
     // NavBar
     // Route for home "/"
     // route for the directory 
     // though those are basically the same 2 things, right?
+
+function App() {
+  return (
     <Router>
       <NavBar />
       {/* <Route exact path="/" component={Home} /> */}
