@@ -24,6 +24,6 @@ The user should be able to:
 
 ## Links
 
-The deployed application: 
+The deployed application: [https://practice-employee-directory.herokuapp.com/](https://practice-employee-directory.herokuapp.com/)
 
 This application's Github repository: [https://github.com/SamSherrill/19th-homework](https://github.com/SamSherrill/19th-homework)
