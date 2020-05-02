@@ -1,3 +1,16 @@
+.nav {
+    background-color: rgb(0,123,255);
+    min-height: 75px;
+}
+
 .nav-link{
-    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+    margin: auto;
+}
+
+form {
+    padding: 5%;
 }

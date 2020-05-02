@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
-import EmployeeDirectory from "./containers/EmployeeDirectory";
+import MainPage from "./containers/MainPage";
 
     // Will need:
     // Router
@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <NavBar />
-      <Route exact path="/" component={EmployeeDirectory} />
+      <Route exact path="/" component={MainPage} />
     </Router>
   );
 }
