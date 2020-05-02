@@ -25,22 +25,32 @@ const Item = (props) => {
       });
   }, []);
 
-//   makeFakePhoneNumber(() => {
-//     fakePhoneNumber = Math.floor(Math.random())
-//   });
+  function makeFakeEmailAddress(props) {
+      var employeeName = props.employee_name.toLowerCase().split(" ");
+      var fakeEmailAddress = `${employeeName[0]}.${employeeName[1]}@fakecompany.com`;
+      return fakeEmailAddress;
+  }
+  function makeFakePhoneNumber() {
+    var fragment1 = Math.floor(Math.random()*800 + 200);
+    var fragment2 = Math.floor(Math.random()*1000);
+    var fragment3 = Math.floor(Math.random()*10000);
+    var fakePhoneNumber = `(${fragment1}) ${fragment2}-${fragment3}`;
+    return fakePhoneNumber;
+  };
 
   return (
-    <div className="row">
-      <div className="col-4">
-        <img
+    <div className="row item-row">
+      <div className="col-md-2">
+        <img className="profile-pic"
           src={employeeImageUrl}
           alt="Employee avatar"
           style={styles.employeePhoto}
         ></img>
       </div>
       <div className="col-sm-1">{props.id}</div>
-      <div className="col-md-3">{props.employee_name}</div>
-      <div className="col-md-3">{props.employee_salary}</div>
+      <div className="col-md-2">{props.employee_name}</div>
+      <div className="col-md-4">{makeFakeEmailAddress(props)}</div>
+      <div className="col-md-2">{makeFakePhoneNumber()}</div>
       <div className="col-sm-1">{props.employee_age}</div>
     </div>
   );
