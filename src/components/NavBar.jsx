@@ -4,10 +4,7 @@ const NavBar = () => {
   return (
     <nav className="nav">
       <a className="nav-link active" href="/">
-        Employee Tracker
-      </a>
-      <a className="nav-link" href="/directory">
-        Directory
+        Employee Directory
       </a>
     </nav>
   );
