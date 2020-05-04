@@ -6,6 +6,9 @@ const Item = (props) => {
     var fakeEmailAddress = `${employeeName[0]}.${employeeName[1]}@fakecompany.com`;
     return fakeEmailAddress;
   }
+  
+  // I need to make this number stay the same for each employee
+  // Would useState & useEffect solve that?
   function makeFakePhoneNumber() {
     var fragment1 = Math.floor(Math.random() * 800 + 200);
     var fragment2 = Math.floor(Math.random() * 1000);
