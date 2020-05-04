@@ -43,19 +43,19 @@ class MainPage extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log("HandleSubmit");
+    
+    // console.log("HandleSubmit");
+    // console.log(this.state.searchTerm);
     //TODO: Filter employees array and return matching employees
-    console.log(this.state.searchTerm);
+
     const employees = [...this.state.employees];
     // const result = words.filter(word => word.length > 6);
+
     const filteredEmployees = employees.filter((employee) => {
-      // SEARCH FOR EMPLOYEE NAME
-      // COMPARE IT TO THE SPECIFIED SEARCH TERM
-      // var n = str.includes("world");
-      //   return employee.employee_name.includes(this.state.searchTerm);
       const regex = new RegExp(this.state.searchTerm, "gi");
       return employee.employee_name.match(regex);
     });
+
     this.setState({
       employeesToDisplay: filteredEmployees,
     });
@@ -74,7 +74,7 @@ class MainPage extends Component {
                       <input
                         type="text"
                         className="form-control"
-                        placeholder="Search employees"
+                        placeholder="Search employees by first or last name"
                         name="searchTerm"
                         value={this.state.searchTerm}
                         onChange={this.handleChange}
