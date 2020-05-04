@@ -6,6 +6,8 @@ const List = (props) => {
     <div className="container">
       <div className="row">
         <h3 className="h3-employee-count">
+          {/* I may want to change this to say something like "there are xyz employees matching your search",
+          but that would require new screenshots */}
           There are {props.employees.length} employees
         </h3>
       </div>
