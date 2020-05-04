@@ -47,6 +47,7 @@ class MainPage extends Component {
     // console.log("HandleSubmit");
     // console.log(this.state.searchTerm);
     //TODO: Filter employees array and return matching employees
+    // an onClick might help wiht this
 
     const employees = [...this.state.employees];
     // const result = words.filter(word => word.length > 6);
